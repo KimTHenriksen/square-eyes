@@ -5,15 +5,137 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+
+
+
+
+
+header,
+footer {
+    background-color: #353232;
+    color: #F9F1F1;
+    padding: 24px;
+    margin: 8px;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+body, main {
+  background-color: #151414;
+}
+
+.cta {
+    background-color: #F1883C;
+    color: #F9F1F1;
+    font-size: 1rem;
+    border-radius: 16px;
+    padding: 8px;
+    margin: 12px;
+}
+
+header a {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+/* Fonts */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #F9F1F1;
+}
+
+h1, h2 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Hamburger menu */
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  position: relative;
+  background: #353232;
+  color: #F9F1F1;
+  padding: 10px;
+  font-size: 1rem;
+
+}
+
+nav {
+  position: absolute;
+  background: #353232;
+  left: 0px;
+}
+
+nav a {
+  display: block;
+  color: #F9F1F1;
+  padding: 10px 20px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}
+
+/* Home page */
+.welcome {
+  background-image: url("../assets/images/girlwithgun.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  position: relative;
+}
+
+.welcome__content {
+  position: absolute;
   text-align: center;
+  top: 30px;
+  left: 80px;
+}
+
+.cover-films {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px ) {
+.cover-films, .text-box {
+  flex-wrap: wrap;
+}
+ 
+
+}
+/* Contact */
+.form__input {
+  display: block;
 }
