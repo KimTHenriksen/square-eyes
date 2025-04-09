@@ -14,10 +14,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+
+    <div class="pagewrapper"></div>
+
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -27,9 +31,12 @@
             <a href="./about.html">About</a>
             <a href=".//contact.html">Contact</a>
         </nav>
+    </div>
     </header>
 
-<main>
+
+<main class="page-main">
+<div class="container">
     <h2>Contact</h2>
     <form>
         <fieldset>
@@ -48,16 +55,20 @@
         <input type="submit" value="Submit inquiry">
     </form>
    
-  
+ </div> 
 </main> 
 </body>
 
-<footer>
-    <div>
+<footer class="page-footer">
+<div class="container-footer">
+    <div class="cta-support">
         <a href="supportus.html" class="cta">Support Us-Donate now</a>
     </div>
+    <br>
+    <br>
     <div>
         Copyright &copy;
     </div>
+</div>
 </footer>
 </html>

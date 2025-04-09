@@ -15,10 +15,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+    <div class="pagewrapper"></div>
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -28,22 +30,41 @@
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
         </nav>
+    </div>
     </header>
 
-<main>
-    <section>
-        <h1>My Videos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem et quasi vitae autem doloribus hic, ut fuga libero rem, ex odio quos explicabo sit, reprehenderit est? Adipisci, aliquid animi.</p>
-    </section>
-</main> 
+    <main></main>
+    <h2>My Videos</h2>
+    <section class="myvideo-covers">
+    
+    <div class="img-text-box">
+        <div class="cover-filmscontent">
+            <img src="../assets/images/girlwithgun2.jpeg"/>
+            <h3>The Gun</h3>
+        </div>
+        <div class="cover-filmscontent">
+            <img src="../assets/images/baseball.jpeg"/>
+            <h3>Baseball</h3>
+        </div>
+        <div class="cover-filmscontent">
+            <img src="../assets/images/thesearch.jpeg"/>
+            <h3>The Search</h3>
+        </div>
+    </div>
+
+    </main> 
 </body>
 
-<footer>
-    <div>
+<footer class="page-footer">
+<div class="container-footer">
+    <div class="cta-support">
         <a href="supportus.html" class="cta">Support Us-Donate now</a>
     </div>
+    <br>
+    <br>
     <div>
         Copyright &copy;
     </div>
+</div>
 </footer>
 </html>

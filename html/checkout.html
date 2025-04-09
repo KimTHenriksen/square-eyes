@@ -15,9 +15,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+
+    <div class="pagewrapper"></div>
 </head>
 <body>
-    <header>
+
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -27,9 +31,11 @@
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
         </nav>
+    </div>
     </header>
-
-    <main>
+    
+    <main class="page-main">
+    <div class="container">
         <h2>Cart</h2>
         <section>
             <div>
@@ -37,34 +43,40 @@
                 <h3>The Search</h3>
                 <p>Price 199 NOK</p>
             </div>
-        </section>
+                    
+    
         <section>
+        <h2>Payment</h2>
             <div>
-                <a href="checkoutsuccess.html" class="cta">Pay Now</a>
+                <form>
+                    <fieldset>
+                        <legend>Pay by card</legend>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form__input">
+                            <label for="number">Cardnumber</label>
+                            <input type="number" name="number" id="number" class="form__input">
+                    </fieldset>
+                </form>
             </div>
         </section>
-        
+        <br>
         <section>
-            <h2>Payment</h2>
-            <form>
-                <fieldset>
-                    <legend>Pay by card</legend>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form__input">
-                    <label for="number">Cardnumber</label>
-                    <input type="number" name="number" id="number" class="form__input">
-                </fieldset>
-            </form>
+            <a href="checkoutsuccess.html" class="cta">Pay Now</a>
         </section>
+    </div>
     </main> 
-    </body>
+</body>
 
-<footer>
-    <div>
-        <a href="supportus.html" class="cta">Support Us-Donate now</a>
-    </div>
-    <div>
-        Copyright &copy;
-    </div>
-</footer>
+    <footer class="page-footer">
+        <div class="container-footer">
+            <div class="cta-support">
+                <a href="supportus.html" class="cta">Support Us-Donate now</a>
+            </div>
+            <br>
+            <br>
+            <div>
+                Copyright &copy;
+            </div>
+        </div>
+        </footer>
 </html>

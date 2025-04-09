@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a site where you can buy new and popular films, and support our local filmmakers.">
-    <meta name="keywords" content="buy films, support filmmakers">
+    <meta name="description" content="In the product details you can read about the film.">
+    <meta name="keywords" content="buy films, support filmmakers, product details">
     <title>SquareEyes Product details</title>
     <link href="../css/styles.css" rel="stylesheet">
 
@@ -15,10 +15,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+    <div class="pagewrapper"></div>
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -28,28 +30,41 @@
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
         </nav>
+    </div>
     </header>
 
-<main>
+<main class="page-main">
+<div class="container">
     <h2>Product details</h2>
-    <section>
-        <img src="../assets/images/thesearch-productdetails.jpeg">
-        <h3>The Search</h3>
-        <p>Tom gets caught up in gambling and does everything to keep in touch with his son. 
-        Suddenly one day Tom’s son is mysteriously gone.</p>
-        <p>Price 199 NOK</p>
-        <a href="checkout.html" class="cta">Buy</a>
-
-    </section>
+    <section class="product-details">
+            
+    <div class="product-text-box">
+        <div class="product-content">
+            <img src="../assets/images/thesearch-productdetails.jpeg"/>
+            <h3>The Search</h3>
+            <p>Tom gets caught up in gambling and does everything to keep in touch with his son.</p>
+            <p>Suddenly one day Tom's son is mysteriously gone. </p>
+        </div>
+        <div class="text-box">
+            <p>Price 199 NOK</p>
+            <a href="checkout.html" class="cta">Add to cart</a>
+        </div>
+    </div>
+     </section>
+</div>
 </main> 
 </body>
 
-<footer>
-    <div>
+<footer class="page-footer">
+<div class="container-footer">
+    <div class="cta-support">
         <a href="supportus.html" class="cta">Support Us-Donate now</a>
     </div>
+    <br>
+    <br>
     <div>
         Copyright &copy;
-    </div>
+</div>
+</div>
 </footer>
 </html>

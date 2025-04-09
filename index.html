@@ -16,10 +16,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+
+    <div class="pagewrapper"></div>
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -29,41 +32,44 @@
             <a href="./html/about.html">About</a>
             <a href="./html/contact.html">Contact</a>
         </nav>
+    </div>
     </header>
 
-<main>
-    <section class="welcome">
-        <div class="welcome__content">
-        <h1>Welcome to SquareEyes</h1>
-        <a href="./html/categories.html" class="cta">View categories</a>
-        </div>
-    </section>
-    
-    
-    <h2>News</h2>
-    <section class="cover-films">
-        
-        <div class="img-text-box">
-    <div class="cover-filmscontent">
-            <img src="./assets/images/chucky.jpeg"/>
-            <h3>Chucky</h3>
+    <main class="page-main">
+    <div class="container">
+        <section class="welcome">
+            <div class="welcome__content">
+                <h1>Welcome</h1>
+                <p><i>Buy your next film from SquareEyes</i></p>
+                <br>
+                <a href="./html/categories.html" class="cta">View categories</a>
             </div>
+        </section>
+    
+    
+        <h2>News</h2>
+        <section class="cover-films">
+            <div class="img-text-box">
+                <div class="cover-filmscontent">
+                    <img src="./assets/images/chucky.jpeg"/>
+                    <h3>Chucky</h3>
+                </div>
             <div class="text-box">
             <p>199 NOK</p>
             <a href="./html/checkout.html" class="cta">Buy</a>
-        </div>
-    </div>
+            </div>
+            </div>
 
-        <div class="img-text-box">
-    <div class="cover-filmscontent">
-            <img src="./assets/images/girlwithgun2.jpeg">
-            <h3>Gun</h3>
+            <div class="img-text-box">
+                <div class="cover-filmscontent">
+                <img src="./assets/images/girlwithgun2.jpeg">
+                    <h3>Gun</h3>
+                </div>
+                <div class="text-box">
+                    <p>199 NOK</p>
+                    <a href="./html/checkout.html" class="cta">Buy</a>
+                </div>
             </div>
-            <div class="text-box">
-            <p>199 NOK</p>
-            <a href="./html/checkout.html" class="cta">Buy</a>
-        </div>
-    </div>
 
         <div class="img-text-box">
     <div class="cover-filmscontent">
@@ -136,15 +142,20 @@
         </div>
     </div>
     </section>
+</div>
 </main> 
 </body>
 
-<footer>
-    <div>
-        <a href="supportus.html" class="cta">Support Us-Donate now</a>
+<footer class="page-footer">
+<div class="container-footer">
+    <div class="cta-support">
+        <a href="./html/supportus.html" class="cta">Support Us-Donate now</a>
     </div>
+    <br>
+    <br>
     <div>
         Copyright &copy;
     </div>
+</div>
 </footer>
 </html>

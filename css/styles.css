@@ -7,19 +7,61 @@
 
 
 
+body {
+  margin: 0;
+}
 
+.page-wrapper {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-header {
+  background-color: #353232;
+  height: 100px;
+}
+
+.page-main {
+  background-color: #151414;
+  flex-grow: 1;
+}
+
+.page-footer {
+  background-color: #353232;
+  height: 100px;
+}
+
+.container-header,
+.container-footer {
+  background-color: #353232;
+  height: 100%;
+  border: 1px solid #353232;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
 
 
 header,
 footer {
-    background-color: #353232;
-    color: #F9F1F1;
-    padding: 24px;
-    margin: 8px;
+  color: #F9F1F1;
+  padding: 24px;
+  margin: 8px;
+}
+
+.cta-support {
+  align-item: center;
 }
 
 body, main {
   background-color: #151414;
+}
+
+body {
+  display: grid;
+  grid-gap: 1rem;
 }
 
 .cta {
@@ -38,6 +80,8 @@ header a {
 footer {
     text-align: center;
 }
+
+
 
 
 
@@ -112,9 +156,11 @@ nav a {
 .welcome__content {
   position: absolute;
   text-align: center;
-  top: 30px;
-  left: 80px;
+  top: 60px;
+  left: 90px;
+  font-size: 1rem;
 }
+
 
 .cover-films {
   flex: 1;
@@ -133,9 +179,71 @@ nav a {
   flex-wrap: wrap;
 }
  
-
 }
+
+/* About us */
+
+.category-list {
+  color:#F1883C;
+}
+
 /* Contact */
 .form__input {
   display: block;
 }
+
+/* Home page */
+
+.product-details {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.product-text-box *>,
+.product-content {
+  display: flex;
+  justify-content:space-between;
+
+}
+
+/* Checkout */
+
+
+/* Support us */
+.support_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #F9F1F1;
+  
+}
+
+/* Support-Checkout succes */
+.page-main_support,
+.page-main_checkout {
+  background-color: #F9F1F1;
+  flex-grow: 1;
+}
+
+.container-supportsucces, 
+.container-checkoutsucces {
+  background-color: #F9F1F1;
+  color: green;
+  text-align: center;
+}
+
+.success-text,
+.checkoutsuccess-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: green;
+}
+
+.myvideos {
+  color: #F1883C;
+}
+
+
+

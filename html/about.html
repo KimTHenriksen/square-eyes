@@ -14,10 +14,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
  
     <script src="https://kit.fontawesome.com/a3719b13a7.js" crossorigin="anonymous"></script>
+
+    <div class="pagewrapper"></div>
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
+    <div class="container-header">
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
         <nav>
@@ -27,22 +30,36 @@
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
         </nav>
+    </div>
     </header>
 
-<main>
-    <section>
-        <h1>About us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem et quasi vitae autem doloribus hic, ut fuga libero rem, ex odio quos explicabo sit, reprehenderit est? Adipisci, aliquid animi.</p>
+<main class="page-main">
+<div class="container">
+    <section class="section-about">
+        <h2>About us</h2>
+        <p>SqurareEyes are a video streaming website where you can purchase high-quality 
+        videos directly from the people who make them. When you have purchased a video, 
+        you are able to watch it online from My Videos at the website.</p>
+        <p>SquareEyes have several different categories to choose from. Take a look under 
+        Category, and purchase your next video from us.</p>
+        <p>With your support we are able to keep supporting the small filmmakers. We are able
+        to discover new and interesting films, and keep our website and community alive.</p>
+        <p>Welcome to us, choose your next video from our</p> 
+        <a href="categories.html" class="category-list">Category list</a>    
     </section>
+</div>
 </main> 
 </body>
 
-<footer>
-    <div>
-        <a href="supportus.html" class="cta">Support Us-Donate now</a>
-    </div>
-    <div>
-        Copyright &copy;
-    </div>
-</footer>
-</html>
+<footer class="page-footer">
+    <div class="container-footer">
+        <div class="cta-support">
+            <a href="supportus.html" class="cta">Support Us-Donate now</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            Copyright &copy;
+        </div>
+    </footer>
+    </html>
