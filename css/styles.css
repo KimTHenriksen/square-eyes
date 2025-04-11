@@ -199,6 +199,21 @@ nav a {
  
 }
 
+/* Categories */
+
+.floated {
+  float: left;
+  padding: 2px;
+  margin: 8px;
+}
+
+Section::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+  
+
 /* About us */
 
 .category-list {
