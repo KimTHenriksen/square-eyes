@@ -70,7 +70,7 @@ body {
 
 .cta {
     background-color: #F1883C;
-    color: #F9F1F1;
+    color:#151414;
     font-size: 1rem;
     border-radius: 16px;
     padding: 8px;
@@ -81,7 +81,7 @@ body {
 
 .cta__welcome {
   background-color: #F1883C;
-  color: #F9F1F1;
+  color:#151414;
   font-size: 1,5rem;
   border-radius: 16px;
   padding: 12px;
@@ -101,7 +101,7 @@ footer {
 /* Hoover */
 .cta:hover, 
 .cta__welcome:hover {
-  color: #151414;
+  color:#F9F1F1;
 }
 
 .more-info:hover,
