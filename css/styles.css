@@ -18,7 +18,7 @@ body {
   height: 100vh;
 }
 
-.page-header {
+header {
   background-color: #353232;
   height: 100px;
   margin: 8px;
@@ -44,7 +44,6 @@ body {
   border: 1px solid #353232;
   max-width: 600px;
   margin: 0 auto;
-
 }
 
 
@@ -172,6 +171,7 @@ nav a {
 
   nav a {
     display: inline-block;
+
   }
 }
 
@@ -248,11 +248,24 @@ Section::after {
 
 /* About us */
 
-.category-list {
-  color:#F1883C;
+.section-about {
+  max-width: 600px;
+  margin: 40px;
+
+}
+
+.about-main {
+  display: flex;
+  justify-content: center;
 }
 
 /* Contact */
+.section-contact, 
+.myvideo-covers {
+display: flex;
+justify-content: center;
+}
+
 .form__input {
   display: block;
 }
