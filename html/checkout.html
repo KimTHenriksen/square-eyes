@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
@@ -24,6 +24,11 @@
 <body>
 
     <header>
+        <section class="section-logo">
+            <div class="img-box_logo">
+                <img src="../assets/images/squareeyes-logo.png" alt="SquresEyes logo">
+            </div>
+
     <div class="container-header">
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
@@ -37,37 +42,35 @@
     </div>
     </header>
     
-    <main class="page-main">
-    <div class="container">
-        <h2>Cart</h2>
-        <section>
+    <main class="checkout-main">
+        <section class="section-checkout">
+            <div class="checkout_content">
+            <section class="h2_category">
+                <h2>Cart</h2>
+            <section>
+            </div>
             <div class="img-box-cart">
                 <img src="../assets/images/thesearch-cart.jpeg" alt="A father holding his arm around his son, sitting, smiling at eachother">
             </div>
             <h3>The Search</h3>
             <p>Price 199 NOK</p>
-    </div>
-                    
-    
-        <section>
-        <h2>Payment</h2>
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Pay by card</legend>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" class="form__input">
-                            <label for="number">Cardnumber</label>
-                            <input type="number" name="number" id="number" class="form__input">
-                    </fieldset>
-                </form>
+            </div>  
+        
+            <div class="support_donate">
+                <h3>Payment</h3>
+                    <form class="pay-donate">
+                        <fieldset class="pay-donate">
+                            <legend>Pay by card</legend>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form__input">
+                                <label for="number">Cardnumber</label>
+                                <input type="number" name="number" id="number" class="form__input">
+                        </fieldset>
+                    </form>
             </div>
-        </section>
         <br>
-        <section>
             <a href="checkoutsuccess.html" class="cta">Pay Now</a>
         </section>
-    </div>
     </main> 
 
 

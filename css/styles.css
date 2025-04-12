@@ -22,7 +22,6 @@ header {
   background-color: #353232;
   height: 100px;
   margin: 8px;
-  
 }
 
 .page-main {
@@ -37,7 +36,7 @@ header {
   height: 100px;
 }
 
-.container-header,
+
 .container-footer {
   background-color: #353232;
   height: 100%;
@@ -54,9 +53,6 @@ footer {
   margin: 8px;
 }
 
-.cta-support {
-  align-item: center;
-}
 
 body, main {
   background-color: #151414;
@@ -71,7 +67,6 @@ body {
 .cta {
     background-color: #F1883C;
     color:#151414;
-    font-size: 1rem;
     border-radius: 16px;
     padding: 8px;
     margin: 12px;
@@ -81,7 +76,6 @@ body {
 .cta__welcome {
   background-color: #F1883C;
   color:#151414;
-  font-size: 1,5rem;
   border-radius: 16px;
   padding: 12px;
   margin: 16px;
@@ -101,6 +95,7 @@ footer {
 .cta:hover, 
 .cta__welcome:hover {
   color:#F9F1F1;
+  transition: 0,5s;
 }
 
 .more-info:hover,
@@ -110,6 +105,7 @@ footer {
 
 header a:hover {
   color: #F1883C;
+  transition-delay: 0,7s;
 }
 
 /* Fonts */
@@ -120,9 +116,27 @@ body {
     color: #F9F1F1;
 }
 
+nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #F9F1F1;
+}
 h1, h2 {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.cta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cta__welcome {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -141,7 +155,7 @@ header {
   background: #353232;
   color: #F9F1F1;
   padding: 10px;
-  font-size: 1rem;
+  
 }
 
 nav {
@@ -174,6 +188,25 @@ nav a {
   }
 }
 
+/* Logo */
+.container-header,
+.section-logo {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 10px;
+}
+
+.section-logo,
+.container-header {
+  flex-direction:row-reverse;
+}
+.img-box_logo {
+  max-width: 140px;
+  }
+
 /* Home page */
 .welcome {
   background-image: url("../assets/images/girlwithgun.jpeg");
@@ -196,8 +229,7 @@ nav a {
 .welcome__content {
   position: absolute;
   text-align: center;
-  top: 30px;
-  left: 60px;
+  left: 40px;
   font-size: 2rem;
 }
 
@@ -254,7 +286,8 @@ Section::after {
 }
 
 .about-main,
-.support-main {
+.support-main,
+.checkout-main {
   display: flex;
   justify-content: center;
 }
@@ -348,6 +381,7 @@ justify-content: center;
 .myvideos {
   color: #F1883C;
 }
+
 
 
 
