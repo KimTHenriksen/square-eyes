@@ -204,12 +204,14 @@ nav a {
 
 
 .cover-films, 
-.h2_category {
+.h2_category, 
+.category_list {
   flex: 1;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 
 .more-info {
