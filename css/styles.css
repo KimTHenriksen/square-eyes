@@ -248,16 +248,18 @@ Section::after {
 
 /* About us */
 
+
 .section-about {
   max-width: 600px;
   margin: 40px;
-
 }
 
-.about-main {
+.about-main,
+.support-main {
   display: flex;
   justify-content: center;
 }
+
 
 /* Contact */
 .section-contact, 
@@ -301,13 +303,19 @@ justify-content: center;
 }
 
 /* Support us */
+
 .support_text {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #F9F1F1;
-  
 }
+
+.pay-donate {
+  max-width: 200px;
+}
+
+
 
 /* Support-Checkout succes */
 .page-main_support,
@@ -321,6 +329,13 @@ justify-content: center;
   background-color: #F9F1F1;
   color: green;
   text-align: center;
+}
+
+
+
+.section-support {
+  max-width: 600px;
+  margin: 40px;
 }
 
 .success-text,
