@@ -5,10 +5,8 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-
-
 body {
- margin: 0%;
+  margin: 0%;
 }
 
 .page-wrapper {
@@ -36,7 +34,6 @@ header {
   height: 100px;
 }
 
-
 .container-footer {
   background-color: #353232;
   height: 100%;
@@ -45,18 +42,16 @@ header {
   margin: 0 auto;
 }
 
-
 header,
 footer {
-  color: #F9F1F1;
+  color: #f9f1f1;
   padding: 24px;
   margin: 8px;
 }
 
-
-body, main {
+body,
+main {
   background-color: #151414;
-  
 }
 
 body {
@@ -65,17 +60,17 @@ body {
 }
 
 .cta {
-    background-color: #F1883C;
-    color:#151414;
-    border-radius: 16px;
-    padding: 8px;
-    margin: 12px;
-    text-decoration: none;
+  background-color: #f1883c;
+  color: #151414;
+  border-radius: 16px;
+  padding: 8px;
+  margin: 12px;
+  text-decoration: none;
 }
 
 .cta__welcome {
-  background-color: #F1883C;
-  color:#151414;
+  background-color: #f1883c;
+  color: #151414;
   border-radius: 16px;
   padding: 12px;
   margin: 16px;
@@ -83,19 +78,18 @@ body {
 }
 
 header a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
-
 /* Hoover */
-.cta:hover, 
+.cta:hover,
 .cta__welcome:hover {
-  color:#F9F1F1;
-  transition: 0,5s;
+  color: #f9f1f1;
+  transition: 0, 5s;
 }
 
 .more-info:hover,
@@ -104,25 +98,27 @@ footer {
 }
 
 header a:hover {
-  color: #F1883C;
-  transition-delay: 0,7s;
+  color: #f1883c;
+  transition-delay: 0, 7s;
 }
 
 /* Fonts */
-body, h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #F9F1F1;
+body,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #f9f1f1;
 }
 
 nav a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #F9F1F1;
+  color: #f9f1f1;
 }
-h1, h3 {
+h1,
+h3 {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
@@ -153,9 +149,8 @@ nav,
 header {
   position: relative;
   background: #353232;
-  color: #F9F1F1;
+  color: #f9f1f1;
   padding: 10px;
-  
 }
 
 nav {
@@ -167,7 +162,7 @@ nav {
 
 nav a {
   display: block;
-  color: #F9F1F1;
+  color: #f9f1f1;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -184,7 +179,6 @@ nav a {
 
   nav a {
     display: inline-block;
-
   }
 }
 
@@ -201,7 +195,6 @@ nav a {
   padding: 10px;
 }
 
-
 .container-header,
 .cart-symbol,
 .section-logo {
@@ -214,7 +207,7 @@ nav a {
 
 .img-box_logo {
   max-width: 150px;
-  }
+}
 
 /* Home page */
 .welcome {
@@ -229,10 +222,7 @@ nav a {
   justify-content: center;
   align-content: center;
 
-
-  color:#F9F1F1;
-
-
+  color: #f9f1f1;
 }
 
 .welcome__content {
@@ -242,9 +232,8 @@ nav a {
   font-size: 2rem;
 }
 
-
-.cover-films, 
-.h1_category, 
+.cover-films,
+.h1_category,
 .category_list {
   flex: 1;
   display: flex;
@@ -255,7 +244,7 @@ nav a {
 }
 
 .more-info {
-  color:#F9F1F1;
+  color: #f9f1f1;
   text-decoration: none;
 }
 
@@ -264,11 +253,32 @@ nav a {
   justify-content: space-between;
 }
 
-@media (min-width: 600px ) {
-.cover-films, .text-box {
-  flex-wrap: wrap;
+@media (min-width: 600px) {
+  .cover-films,
+  .text-box {
+    flex-wrap: wrap;
+  }
 }
- 
+
+.product-details {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.product-text-box * >,
+.product-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Product details */
+.img-box {
+  min-width: 200px;
+}
+img {
+  height: 100%;
+  width: 100%;
 }
 
 /* Categories */
@@ -280,14 +290,12 @@ nav a {
 }
 
 Section::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
-  
 
 /* About us */
-
 
 .section-about {
   max-width: 600px;
@@ -301,43 +309,16 @@ Section::after {
   justify-content: center;
 }
 
-
 /* Contact */
-.section-contact, 
+.section-contact,
 .myvideo-covers {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .form__input {
   display: block;
 }
-
-
-
-/* Home page */
-
-.product-details {
-  flex: 1;
-  display: flex;
-  gap: 1rem;
-}
-
-.product-text-box *>,
-.product-content {
-  display: flex;
-  justify-content:space-between;
-
-}
-
-/* Product details */
-.img-box {
-  min-width: 200px;
-}
- img {
-  height: 100%;
-  width: 100%;
- }
 
 /* Checkout */
 .img-box-cart,
@@ -351,30 +332,26 @@ justify-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #F9F1F1;
+  color: #f9f1f1;
 }
 
 .pay-donate {
   max-width: 200px;
 }
 
-
-
 /* Support-Checkout succes */
 .page-main_support,
 .page-main_checkout {
-  background-color: #F9F1F1;
+  background-color: #f9f1f1;
   flex-grow: 1;
 }
 
-.container-supportsucces, 
+.container-supportsucces,
 .container-checkoutsucces {
-  background-color: #F9F1F1;
+  background-color: #f9f1f1;
   color: green;
   text-align: center;
 }
-
-
 
 .section-support {
   max-width: 600px;
@@ -390,9 +367,5 @@ justify-content: center;
 }
 
 .myvideos {
-  color: #F1883C;
+  color: #f1883c;
 }
-
-
-
-
