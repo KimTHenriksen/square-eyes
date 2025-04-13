@@ -189,7 +189,9 @@ nav a {
 }
 
 /* Logo */
+
 .container-header,
+.cart-symbol,
 .section-logo {
   flex: 1;
   display: flex;
@@ -199,12 +201,19 @@ nav a {
   padding: 10px;
 }
 
-.section-logo,
-.container-header {
-  flex-direction:row-reverse;
+
+.container-header,
+.cart-symbol,
+.section-logo {
+  flex-direction: row;
 }
+
+.cart-symbol {
+  gap: 2rem;
+}
+
 .img-box_logo {
-  max-width: 140px;
+  max-width: 150px;
   }
 
 /* Home page */
@@ -303,6 +312,8 @@ justify-content: center;
 .form__input {
   display: block;
 }
+
+
 
 /* Home page */
 
