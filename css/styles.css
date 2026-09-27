@@ -7,6 +7,7 @@
 
 body {
   margin: 0%;
+  min-height: 100vh;
 }
 
 .page-wrapper {
@@ -17,13 +18,13 @@ body {
 }
 
 header {
-  background-color: #353232;
+  background-color: var(--color-header-footer);
   height: 100px;
   margin: 8px;
 }
 
 .page-main {
-  background-color: #151414;
+  background-color: var(--color-background);
   flex-grow: 1;
   justify-content: center;
   margin: 8px;
@@ -44,24 +45,25 @@ header {
 
 header,
 footer {
-  color: #f9f1f1;
+  color: var(--color-light);
   padding: 24px;
   margin: 8px;
 }
 
 body,
 main {
-  background-color: #151414;
+  background-color: var(--color-background);
 }
 
 body {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   grid-gap: 1rem;
 }
 
 .cta {
-  background-color: #f1883c;
-  color: #151414;
+  background-color: var(--color-orange);
+  color: var(--color-background);
   border-radius: 16px;
   padding: 8px;
   margin: 12px;
@@ -69,8 +71,8 @@ body {
 }
 
 .cta__welcome {
-  background-color: #f1883c;
-  color: #151414;
+  background-color: var(--color-orange);
+  color: var(--color-background);
   border-radius: 16px;
   padding: 12px;
   margin: 16px;
@@ -88,7 +90,7 @@ footer {
 /* Hoover */
 .cta:hover,
 .cta__welcome:hover {
-  color: #f9f1f1;
+  color: var(--color-light);
   transition: 0, 5s;
 }
 
@@ -98,7 +100,7 @@ footer {
 }
 
 header a:hover {
-  color: #f1883c;
+  color: var(--color-orange);
   transition-delay: 0, 7s;
 }
 
@@ -108,14 +110,14 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #f9f1f1;
+  color: var(--color-light);
 }
 
 nav a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #f9f1f1;
+  color: var(--color-light);
 }
 h1,
 h3 {
@@ -148,14 +150,14 @@ nav,
 
 header {
   position: relative;
-  background: #353232;
+  background: var(--color-header-footer);
   color: #f9f1f1;
   padding: 10px;
 }
 
 nav {
   position: absolute;
-  background: #353232;
+  background: var(--color-header-footer);
   left: 0px;
   z-index: 1;
 }
@@ -231,7 +233,7 @@ nav a {
   justify-content: center;
   align-content: center;
 
-  color: #f9f1f1;
+  color: var(--color-light);
 }
 
 .welcome__content {
@@ -253,7 +255,7 @@ nav a {
 }
 
 .more-info {
-  color: #f9f1f1;
+  color: var(--color-light);
   text-decoration: none;
 }
 
@@ -341,7 +343,7 @@ Section::after {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #f9f1f1;
+  color: var(--color-light);
 }
 
 .pay-donate {
@@ -351,13 +353,13 @@ Section::after {
 /* Support-Checkout succes */
 .page-main_support,
 .page-main_checkout {
-  background-color: #f9f1f1;
+  background-color: var(--color-light);
   flex-grow: 1;
 }
 
 .container-supportsucces,
 .container-checkoutsucces {
-  background-color: #f9f1f1;
+  background-color: var(--color-light);
   color: green;
   text-align: center;
 }
@@ -376,5 +378,5 @@ Section::after {
 }
 
 .myvideos {
-  color: #f1883c;
+  color: var(--color-orange);
 }
