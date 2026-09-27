@@ -320,6 +320,10 @@ Section::after {
   justify-content: center;
 }
 
+.category-list {
+  color: var(--color-light);
+}
+
 /* Contact */
 .section-contact,
 .myvideo-covers {
