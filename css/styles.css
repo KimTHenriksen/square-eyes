@@ -167,10 +167,12 @@ nav a {
   text-decoration: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
   nav {
-    display: block;
+    display: flex;
     position: static;
+    align-items: center;
+    white-space: nowrap;
   }
 
   .hamburger-icon {
@@ -178,7 +180,7 @@ nav a {
   }
 
   nav a {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -206,7 +208,14 @@ nav a {
 }
 
 .img-box_logo {
+  width: 150px;
   max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.img-box_logo img {
+  width: 150px;
+  height: auto;
 }
 
 /* Home page */
