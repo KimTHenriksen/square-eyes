@@ -43,3 +43,7 @@ For Portfolio 1 I made some improvements to the project:
 ## Known issues
 
 The website was made with HTML & CSS only, so the buying and form functions are only for showing how the website could work.
+
+## Author
+
+Kim T Henriksen
